@@ -3,6 +3,11 @@ site_name: Documentation
 site_author: Roman Prydybailo
 nav:
   - Home: index.md
+  - Kubernetes:
+    - Concepts:
+      - Pod: 'kubernetes/concepts/pod.md'
+
+
 
 theme:
   features:
