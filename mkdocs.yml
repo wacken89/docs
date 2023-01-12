@@ -1,0 +1,77 @@
+---
+site_name: Documentation
+site_author: Roman Prydybailo
+nav:
+  - Home: index.md
+
+theme:
+  features:
+    - content.code.annotate
+    - header.autohide
+    - navigation.top
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: 'indigo'
+      accent: 'indigo'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  name: 'material'
+  icon:
+    repo: fontawesome/brands/gitlab
+  include_sidebar: true
+markdown_extensions:
+  - attr_list:
+  - admonition:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite:
+  - pymdownx.snippets:
+  - pymdownx.betterem:
+  - pymdownx.extra:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.footnotes:
+  - pymdownx.details:
+  - pymdownx.mark:
+  - pymdownx.keys:
+  - pymdownx.smartsymbols:
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
+      social_url_shortener: true
+  - markdown.extensions.md_in_html:
+  - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.snippets:
+      check_paths: true
+plugins:
+  - search
+  - mermaid2:
+  - git-revision-date-localized:
+      enable_creation_date: true
+extra_javascript:
+  - https://unpkg.com/mermaid@9.1.1/dist/mermaid.min.js
+extra_css:
+  - stylesheets/extra.css
