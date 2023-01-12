@@ -1,5 +1,5 @@
 ### Schema
-![pod](../../../images/pod.png)
+![pod](../../images/pod.png)
 
 ### YAML Example
 
