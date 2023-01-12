@@ -6,7 +6,7 @@ nav:
   - Kubernetes:
     - Concepts:
       - Pod: 'kubernetes/concepts/pod.md'
-
+    - Tips & Tricks: 'kubernetes/tipsandtricks.md'
 
 
 theme:
